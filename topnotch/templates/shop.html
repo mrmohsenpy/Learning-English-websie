@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>course</title>
+</head>
+<body> 
+    <h1>course</h1>
+
+    {% for item in courses %}
+    <h2>{{item.name}}</h2>
+    <h3>{{item.body}}</h3>
+    <img src="{{item.img.url}}" alt="{{item.name}}">
+    <audio src="{{item.audio.url}}"></audio>
+    <video src="{{item.vid.url}}"></video>
+    {% endfor %}
+</body>
+</html>
